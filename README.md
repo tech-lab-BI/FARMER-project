@@ -28,45 +28,6 @@ AgriLink is a climate-smart B2B platform designed to solve crop distribution iss
 
 ---
 
-## 🛠️ Technology Stack
-
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend** | React 19, Vite, Tailwind CSS v4, Lucide Icons |
-| **Backend** | Node.js, Express.js |
-| **Real-time** | Socket.IO (WebSockets) |
-| **Mapping** | Leaflet.js, CartoDB Dark Matter Tiles |
-| **Database** | MongoDB Atlas (Production) / Local JSON File Storage (Out-of-the-Box Fallback) |
-
----
-
-## 📂 Project Structure
-
-```text
-agrilink/
-├── backend/
-│   ├── config/          # DB connection & Local JSON fallback engine
-│   ├── controllers/     # Authentication, Crop CRUD, Storage transactions, Emergency calculations
-│   ├── middleware/      # JWT auth filter & role authorization checks
-│   ├── routes/          # Express route mappings
-│   ├── data/            # Local JSON database files (db.json)
-│   ├── package.json     # Node modules setup
-│   └── server.js        # Entry point & socket listener initialization
-├── frontend/
-│   ├── index.html       # Entry template with Outfit Typography & Leaflet styling CDNs
-│   ├── vite.config.js   # Vite server with proxy forwarding to port 5000
-│   ├── package.json     # Vite & React dependencies
-│   └── src/
-│       ├── components/  # Header navigation & Leaflet Map container
-│       ├── context/     # Auth provider & websocket subscriber
-│       ├── pages/       # Landing portal, Farmer, Storage, Distributor dashboards & Simulator console
-│       ├── index.css    # Tailwind CSS v4 imports & Glassmorphism styles
-│       └── main.jsx     # Root renderer
-└── README.md
-```
-
----
-
 ## ⚙️ Getting Started & Local Setup
 
 ### Prerequisites
@@ -76,6 +37,7 @@ agrilink/
 1. Navigate to the backend directory:
    ```bash
    cd backend
+   npm install
    ```
 2. Start the Express server:
    ```bash
@@ -87,6 +49,7 @@ agrilink/
 1. Navigate to the frontend directory:
    ```bash
    cd ../frontend
+   npm install
    ```
 2. Start the Vite development server:
    ```bash
