@@ -1,0 +1,175 @@
+{
+  "users": [
+    {
+      "id": "u_farmer_2",
+      "name": "Sukhwinder Singh",
+      "email": "sukhwinder@farmer.com",
+      "password": "$2a$10$WpQpG7hXvFvxI4zSUp7yG.g4z0eHk/5888Nl7c3rF75Gv.266wPae",
+      "role": "farmer",
+      "phone": "+91 98765 43211",
+      "location": {
+        "latitude": 30.7333,
+        "longitude": 76.7794,
+        "address": "Chandigarh, Punjab"
+      }
+    },
+    {
+      "id": "u_storage_1",
+      "name": "Himachal Cold Storage",
+      "email": "himachal@storage.com",
+      "password": "$2a$10$WpQpG7hXvFvxI4zSUp7yG.g4z0eHk/5888Nl7c3rF75Gv.266wPae",
+      "role": "storage",
+      "phone": "+91 98765 43212",
+      "facilityName": "Himachal Alpine Cold Store",
+      "location": {
+        "latitude": 31.1048,
+        "longitude": 77.1734,
+        "address": "Shimla, Himachal Pradesh"
+      },
+      "totalCapacity": 5000,
+      "occupiedCapacity": 1200,
+      "pricePerTonPerDay": 15
+    },
+    {
+      "id": "u_storage_2",
+      "name": "Bengal Delta Cold Storage",
+      "email": "bengal@storage.com",
+      "password": "$2a$10$WpQpG7hXvFvxI4zSUp7yG.g4z0eHk/5888Nl7c3rF75Gv.266wPae",
+      "role": "storage",
+      "phone": "+91 98765 43213",
+      "facilityName": "Bengal Delta Agro-Storage",
+      "location": {
+        "latitude": 22.9868,
+        "longitude": 88.4385,
+        "address": "Kalyani, West Bengal"
+      },
+      "totalCapacity": 8000,
+      "occupiedCapacity": 4500,
+      "pricePerTonPerDay": 12
+    },
+    {
+      "id": "u_distributor_1",
+      "name": "Aman Logistics & Retail",
+      "email": "aman@distributor.com",
+      "password": "$2a$10$WpQpG7hXvFvxI4zSUp7yG.g4z0eHk/5888Nl7c3rF75Gv.266wPae",
+      "role": "distributor",
+      "phone": "+91 98765 43214",
+      "companyName": "Aman Fresh Foods Ltd",
+      "location": {
+        "latitude": 22.5726,
+        "longitude": 88.3639,
+        "address": "Kolkata, West Bengal"
+      }
+    },
+    {
+      "id": "use_1782624325259",
+      "name": "Isan",
+      "email": "bikram@gmail.com",
+      "password": "$2a$10$zRLkYZCuVGIIBh0cTd8LIuVOW46D2N8bk2dVmIdECrLCdN.o8Dpdm",
+      "role": "farmer",
+      "phone": "+91 1234567890",
+      "location": {
+        "latitude": 22.8251,
+        "longitude": 88.3902,
+        "address": "Singur, Hooghly, West Bengal"
+      }
+    }
+  ],
+  "crops": [
+    {
+      "id": "crop_1",
+      "farmerId": "u_farmer_1",
+      "farmerName": "Rajesh Kumar",
+      "type": "Potato (Jyoti)",
+      "quantity": 1500,
+      "pricePerKg": 18,
+      "status": "Available",
+      "durationDays": 60,
+      "dateListed": "2026-06-25T12:00:00.000Z",
+      "location": {
+        "latitude": 22.8251,
+        "longitude": 88.3902,
+        "address": "Singur, West Bengal"
+      }
+    },
+    {
+      "id": "crop_2",
+      "farmerId": "u_farmer_1",
+      "farmerName": "Rajesh Kumar",
+      "type": "Onion (Red)",
+      "quantity": 800,
+      "pricePerKg": 28,
+      "status": "Available",
+      "durationDays": 30,
+      "dateListed": "2026-06-26T14:30:00.000Z",
+      "location": {
+        "latitude": 22.8251,
+        "longitude": 88.3902,
+        "address": "Singur, West Bengal"
+      }
+    },
+    {
+      "id": "crop_3",
+      "farmerId": "u_farmer_2",
+      "farmerName": "Sukhwinder Singh",
+      "type": "Wheat (Premium)",
+      "quantity": 5000,
+      "pricePerKg": 24,
+      "status": "Available",
+      "durationDays": 90,
+      "dateListed": "2026-06-27T08:15:00.000Z",
+      "location": {
+        "latitude": 30.7333,
+        "longitude": 76.7794,
+        "address": "Chandigarh, Punjab"
+      }
+    }
+  ],
+  "requests": [
+    {
+      "id": "req_1",
+      "cropId": "crop_1",
+      "cropType": "Potato (Jyoti)",
+      "quantity": 1500,
+      "farmerId": "u_farmer_1",
+      "farmerName": "Rajesh Kumar",
+      "storageId": "u_storage_2",
+      "storageName": "Bengal Delta Agro-Storage",
+      "status": "Pending",
+      "price": 18000,
+      "durationDays": 10,
+      "dateRequested": "2026-06-27T10:00:00.000Z"
+    }
+  ],
+  "buyOrders": [
+    {
+      "id": "order_1",
+      "cropId": "crop_2",
+      "cropType": "Onion (Red)",
+      "quantity": 500,
+      "farmerId": "u_farmer_1",
+      "farmerName": "Rajesh Kumar",
+      "distributorId": "u_distributor_1",
+      "distributorName": "Aman Logistics & Retail",
+      "status": "Approved",
+      "totalPrice": 14000,
+      "dateOrdered": "2026-06-27T16:00:00.000Z"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert_1",
+      "type": "Weather Warning",
+      "title": "Heavy Rainfall & Flood Alert",
+      "description": "Severe precipitation expected in Singur & Hooghly district over the next 48 hours. Flood risk high.",
+      "location": {
+        "latitude": 22.8251,
+        "longitude": 88.3902,
+        "radiusKm": 20
+      },
+      "severity": "High",
+      "dateCreated": "2026-06-28T09:00:00.000Z",
+      "active": true
+    }
+  ]
+}
